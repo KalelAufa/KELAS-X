@@ -1,18 +1,25 @@
+* {
+  margin: 0;
+}
+
 div {
-  width: 70%;
+  width: 70vw;
   margin: auto;
+}
+
+.content {
+  margin-top: 2%;
 }
 
 h1 {
   color: yellowgreen;
   border: 3px solid brown;
-  position: sticky;
-  top: 20px;
 }
 
 h2 {
   color: lightskyblue;
   border: 1px dashed gray;
+  margin-bottom: 30px;
 }
 
 p {
@@ -30,7 +37,7 @@ img {
 }
 
 .huruf{
-  font-size: 30px;
+  font-size: 2rem;
 }
 
 .warna{
@@ -60,9 +67,8 @@ ul {
 ul li {
   color: #fff;
   background: darkorange;
-  display: block;
+  display: inline-block;
   border: 1px blue;
-  float: left;
   padding: 10px;
   position: relative;
   text-decoration: none;
@@ -95,4 +101,11 @@ ul li ul:hover {
 ul li ul li {
   clear: both;
   width: 100%;
+}
+
+@media only screen and ( max-width: 500px ) {
+  body {
+    background: darksalmon;
+    font-family: 'Courier New', Courier, monospace;
+  }
 }
