@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    h1 {
+        background-color: red;
+    }
+    ul li {
+        font-size: large;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    ol li {
+        background-color: green;
+    }
+
+    section{
+        background-color: blue;
+    }
+
+    article{
+        background-color: brown;
+    }
+    footer{
+        background-color: pink;
+    }
+
+    aside{
+        background-color: gray;
+    }
+
+    section h1{
+        background-color: cyan;
+    }
+
+    article h1{
+        background-color:skyblue;
+    }
+    #luar{
+        background-color: yellow;
+        border: 5px solid blue;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-top: 30px;
+    }
+    .dalam{
+        font-family: 'Courier New', Courier, monospace;
+        border: 3px solid red;
+        background-color: red;
+       /* padding-left: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;*/
+        padding: 30px 50px 50px 100px;
+    }   
+    .dalam2{
+        font-style: italic;
+        border: 3px solid green;
+        margin-top: 30px;
+    }
+    #nenek{
+        font-style: italic;
+    }
+
+    .ukuran-font {
+        font-size: x-large;
+    }
+
+    .warna-font {
+    color: rgb(253, 76, 220);
+    }
+    .meja{
+        border: 1px solid black;
+        background-color: aqua;
+    }
+
+    .dalam3{
+        border: 3px solid brown;
+        background-color: blueviolet;
+        margin-top: 30px;
+    }
+    .kursi{
+    background-color: rgb(from blue r g b);
+    border: 1px solid bisque;
+    margin: 30px 0px 30px 0px;
+    }
+
+
+    #catur{
+    background-color: black;
+    display: flex;
+    }
+
+    .kotak{
+    width: 30px;
+    height: 30px;
+    }
+
+    .putih {
+    background-color: white;
+    }
+    </style>
+</head>
+<body>
+    <div id="catur">
+        <div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+        </div>
+        <div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+        </div>
+        <div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+        </div>
+        <div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+        </div>
+        <div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+        </div>
+        <div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+        </div>
+        <div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+        </div>
+        <div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+        </div>
+        <div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+        </div>
+        <div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+        </div>
+        <div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+        </div>
+        <div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+        </div>
+        <div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+        </div>
+        <div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+        </div>
+        <div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+        </div>
+        <div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+        </div>
+        <div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+        </div>
+        <div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+        </div>
+        <div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+        </div>
+        <div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+        </div>
+        <div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+        </div>
+        <div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+        </div>
+        <div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+        </div>
+        <div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+        </div>
+        <div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+        </div>
+        <div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+        </div>
+        <div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+        </div>
+        <div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+        </div>
+        <div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+        </div>
+        <div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+        </div>
+        <div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+        </div>
+        <div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+        </div>
+        <div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+        </div>
+        <div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+        </div>
+        <div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+        </div>
+        <div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+        </div>
+        <div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+        </div>
+        <div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+        </div>
+        <div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+        </div>
+        <div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+        </div>
+        <div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+        </div>
+        <div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+        </div>
+        <div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+        </div>
+        <div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+        </div>
+        <div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+        </div>
+        <div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+        </div>
+        <div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+        </div>
+        <div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+        </div>
+        <div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+        </div>
+        <div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+        </div>
+        <div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+        </div>
+        <div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+        </div>
+        <div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+        </div>
+        <div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+            <div class="kotak"></div>
+            <div class="kotak putih"></div>
+        </div>
+    </div>
+    <div id="luar">sekolah
+        <div class="dalam">kelas
+            <div class="kursi">kursi</div>
+            <div class="meja ukuran-font warna-font">meja</div>
+            <div class="papan">papan tulis</div>
+        </div>
+        <div class="dalam2">masjid</div>
+        <div class="dalam3">Lab</div>
+    </div>
+        <section>
+        <h1>section</h1>
+        <p>section adalah container atau wadah</p>
+        </section>
+        <article>
+            <h1>JADWAL PELAJARAN</h1>
+            <table>
+                <thead>
+                    <tr> 
+                        <th>SENIN</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Upacara</td>
+                    </tr>
+                    <tr>
+                        <td>RPL</td>
+                    </tr>
+                    <tr>
+                        <td>MTK</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        <footer><p>website ini dibuat oleh Kal'el Akbar</p></footer>
+        <aside><ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>php</li>
+        </ol></aside>
+    <h1 style="background-color: yellow; font-family: 'Courier New', Courier, monospace; margin-top: 200px; margin-bottom: 100px;"
+    >Belajar HTML dan CSS</h1>
+    <p style="margin: 50px;">
+        HTML digunakan untuk membuat tampilan website.
+        CSS digunakan untuk mengatur tampilan.
+    </p>
+    <h1>MATERI HTML</h1>
+    <ul>
+        <li>
+            h1 untuk judul
+        </li>
+        <li>
+            p untuk paragraf
+        </li>
+        <li>
+            img untuk gambar
+        </li>
+        <li>
+            table untuk tabel
+        </li>
+        <li>
+            input untuk form
+        </li>
+        <li>
+            li untuk list/daftar
+        </li>
+    </ul>
+    <h1>MATERI CSS</h1>
+    <ol>
+        <li>
+            margin, padding, position untuk mengatur jarak antara element HTML
+        </li>
+        <li>
+            display untuk mengatur element HTML agar tampil atau tidak tampil, mendatar (kolom), atau menurun (baris)
+        </li>
+        <li>
+            style untuk mengatur font
+        </li>
+    </ol>
+    <h1>Belajar CSS</h1>
+</body>
+</html>
