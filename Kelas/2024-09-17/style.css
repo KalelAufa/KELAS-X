@@ -1,13 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* baner */
-
-.baner{
-    position: absolute;
-}
 
 .baner-1 img{
     width: 800px;
@@ -16,12 +14,12 @@
 
 .baner-2 img{
     width: 400px;
-    height: 120px;
+    height: 115px;
 }
 
 .baner-3 img{
     width: 400px;
-    height: 120px;
+    height: 115px;
 }
 
 .baner-1{
@@ -30,7 +28,7 @@
     height: 235px;
     position: absolute;
     top: 150px;
-    left: 160px;
+    left: 158px;
 }
 
 .baner-2{
@@ -39,7 +37,7 @@
     
     position: absolute;
     top: 150px;
-    left: 960px;
+    left: 965px;
 }
 
 .baner-3{
@@ -47,8 +45,8 @@
     height: 120px;
     
     position: absolute;
-    top: 280px;
-    left: 960px;
+    top: 270px;
+    left: 965px;
 }
 
 /* icon */
@@ -63,8 +61,8 @@
     width: 60px;
     height: 60px;
     position: absolute;
-    top: 420px;
-    left: 200px;
+    top: 400px;
+    left: 208px;
 }
 
 .icon-2{
@@ -72,86 +70,83 @@
     height: 60px;
     
     position: absolute;
-    top: 420px;
-    left: 315px;
+    top: 400px;
+    left: 326px;
 }
 
 .icon-3{
     width: 60px;
     height: 60px;
-    
     position: absolute;
-    top: 420px;
-    left: 430px;
+    top: 400px;
+    left: 444px;
 }
 
 .icon-4{
     width: 60px;
     height: 60px;
-    
     position: absolute;
-    top: 420px;
-    left: 545px;
+    top: 400px;
+    left: 562px;
 }
 
 .icon-5{
     width: 60px;
     height: 60px;
-    
     position: absolute;
-    top: 420px;
-    left: 670px;
+    top: 400px;
+    left: 680px;
 }
 
 .icon-6{
     width: 60px;
     height: 60px;
-    
     position: absolute;
-    top: 420px;
-    left: 785px;
+    top: 400px;
+    left: 798px;
 }
 
 .icon-7{
     width: 60px;
     height: 60px;
-    
     position: absolute;
-    top: 420px;
-    left: 900px;
+    top: 400px;
+    left: 916px;
 }
 
 .icon-8{
     width: 60px;
     height: 60px;
-    
     position: absolute;
-    top: 420px;
-    left: 1015px;
+    top: 400px;
+    left: 1034px;
 }
 
 .icon-9{
     width: 60px;
     height: 60px;
-    
     position: absolute;
-    top: 420px;
-    left: 1130px;
+    top: 400px;
+    left: 1152px;
 }
 
 .icon-10{
     width: 60px;
     height: 60px;
-    
     position: absolute;
-    top: 420px;
-    left: 1245px;
+    top: 400px;
+    left: 1270px;
 }
 
 /* font */
 
-.font{
-    text-align: center;
+.text{
+    display: flex;
+    flex-direction: row;
+    line-height: 18px;
     font-size: 13px;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: absolute;
+    left: -13px;
 }
