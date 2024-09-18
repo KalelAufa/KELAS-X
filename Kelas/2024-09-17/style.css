@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* baner */
+
+.baner{
+    position: absolute;
+}
+
+.baner-1 img{
+    width: 800px;
+    height: 235px;
+}
+
+.baner-2 img{
+    width: 400px;
+    height: 120px;
+}
+
+.baner-3 img{
+    width: 400px;
+    height: 120px;
+}
+
+.baner-1{
+    
+    width: 800px;
+    height: 235px;
+    position: absolute;
+    top: 150px;
+    left: 160px;
+}
+
+.baner-2{
+    width: 400px;
+    height: 120px;
+    
+    position: absolute;
+    top: 150px;
+    left: 960px;
+}
+
+.baner-3{
+    width: 400px;
+    height: 120px;
+    
+    position: absolute;
+    top: 280px;
+    left: 960px;
+}
+
+/* icon */
+
+.icon img{
+    width: 48px;
+    height: 48px;
+    margin-bottom: 3px;
+}
+
+.icon-1{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 420px;
+    left: 200px;
+}
+
+.icon-2{
+    width: 60px;
+    height: 60px;
+    
+    position: absolute;
+    top: 420px;
+    left: 315px;
+}
+
+.icon-3{
+    width: 60px;
+    height: 60px;
+    
+    position: absolute;
+    top: 420px;
+    left: 430px;
+}
+
+.icon-4{
+    width: 60px;
+    height: 60px;
+    
+    position: absolute;
+    top: 420px;
+    left: 545px;
+}
+
+.icon-5{
+    width: 60px;
+    height: 60px;
+    
+    position: absolute;
+    top: 420px;
+    left: 670px;
+}
+
+.icon-6{
+    width: 60px;
+    height: 60px;
+    
+    position: absolute;
+    top: 420px;
+    left: 785px;
+}
+
+.icon-7{
+    width: 60px;
+    height: 60px;
+    
+    position: absolute;
+    top: 420px;
+    left: 900px;
+}
+
+.icon-8{
+    width: 60px;
+    height: 60px;
+    
+    position: absolute;
+    top: 420px;
+    left: 1015px;
+}
+
+.icon-9{
+    width: 60px;
+    height: 60px;
+    
+    position: absolute;
+    top: 420px;
+    left: 1130px;
+}
+
+.icon-10{
+    width: 60px;
+    height: 60px;
+    
+    position: absolute;
+    top: 420px;
+    left: 1245px;
+}
+
+/* font */
+
+.font{
+    text-align: center;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}

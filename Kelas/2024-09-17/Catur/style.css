@@ -1,0 +1,62 @@
+.papan{
+    height: 500px;
+    width: 500px;
+    background-color: antiquewhite;
+}
+
+.kotak{
+    width: 100px;
+    height: 100px;
+}
+
+.baris-1{
+    position: absolute;
+}
+
+.baris-2{
+    position: absolute;
+    top: 180px;
+}
+
+.baris-3{
+    position: absolute;
+    top: 280px;
+}
+
+.col-1-1,
+.col-1-3,
+.col-2-2,
+.col-3-1,
+.col-3-3{
+    background-color: black;
+}
+
+.col-1-2,
+.col-2-1,
+.col-2-3,
+.col-3-2{
+    background-color: white;
+}
+
+.col-1-1,
+.col-2-1,
+.col-3-1{
+    position: absolute;
+    left: 0px;
+}
+
+.col-1-2,
+.col-2-2,
+.col-3-2{
+    position: absolute;
+    top: 0px;
+    left: 100px;
+}
+
+.col-1-3,
+.col-2-3,
+.col-3-3{
+    position: absolute;
+    top: 0px;
+    left: 200px;
+}
