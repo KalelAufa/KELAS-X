@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:rgb(245, 245, 245);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.product{
+    width: 1200px;
+    height: 700px;
+    background-color: white;
+}
+
+.content{
+    margin-top: 10px;
+    display: flex;
+}
+
+/* display gambar */
+
+.display-content{
+    width: 450px;
+    height: 500px;
+    margin-right: 40px;
+}
+
+.main-img{
+    width: 430px;
+    height: 430px;
+    margin-left: 20px;
+}
+
+.cmini-img{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.mini-img{
+    width: 80px;
+    height: 80px;
+    margin-left: 35px;
+}
+
+.mini-img img{
+    width: 80px;
+    height: 80px;
+}
+
+/* text product */
+
+.about-content{
+    width: 700px;
+    height: 200px;
+}
+
+.about-content p{
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+/* info text */
+
+.info{
+    width: 700px;
+    height: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 8px;
+    margin-bottom: 30px;
+}
+
+.star{
+    width: 350px;
+    height: 20px;
+}
+
+.star p{
+    font-size: 15px;
+    margin: 0px ;
+}
+
+.report{
+    width: 350px;
+    height: 20px;
+    text-align: end;
+    margin-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.report p{
+    margin-top: 0px;
+    font-size: 15px;
+}
+
+/* harga */
+
+.price{
+    width: 700px;
+    height: 100px;
+    background-color:rgb(245, 245, 245) ;
+}
+
+.nominal{
+    width: 700px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+}
+
+.nominal p{
+    font-size: 30px;
+    color: #d0011b;
+}
+
+.garansi{
+    width: 700px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.garansi img{
+    width: 20px;
+    height: 20px;
+}
+
+.garansi-txt{
+    width: 650px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.txt{
+    font-size: 13px;
+}
+
+
+/* payment */
+.payment{
+    width: 700px;
+    height: 250px;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.return{
+    width: 500px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.return p{
+    font-size: 15px;
+    margin-top: 0;
+}
+
+.grns-txt{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.grns-txt img{
+    width: 20px;
+    height: 20px;
+}
+
+.txt-rtn{
+    margin-left: 15px;
+}
+
+.pengiriman{
+    width: 500px;
+    height: 150px;
+    display: flex;
+    margin-top: 10px;
+}
+
+.pengiriman p{
+    font-size: 15px;
+}
+
+.txt-dtl{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.txt-dtl img{
+    width: 20px;
+    height: 20px;
+    margin-left: 18px;
+    margin-top: 10px;
+}
+
+.txt-txt p{
+    font-size: 15px;
+    margin-left: 18px;
+}
+
+.txt-dtl strong{
+    margin-left: 20px;
+}
+
+/* type */
+
+.pilihan{
+    width: 500px;
+    height: 50px;
+    display: flex;
+}
+
+.pilihan p{
+    font-size: 15px;
+}
+
+.type{
+    width: 500px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.paket{
+    width: 200px;
+    height: 40px;
+    border: solid 1px #767676;
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+}
