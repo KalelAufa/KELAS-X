@@ -203,14 +203,12 @@ body{
 .txt-dtl{
     display: flex;
     align-items: center;
-    margin-top: 10px;
 }
 
 .txt-dtl img{
     width: 20px;
     height: 20px;
     margin-left: 18px;
-    margin-top: 10px;
 }
 
 .txt-txt p{
