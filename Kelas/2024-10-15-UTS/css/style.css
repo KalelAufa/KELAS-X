@@ -114,6 +114,18 @@
     color: white;
 }
 
+.card-crcl {
+    transition: transform 0.3s ease;
+}
+
+.card-crcl:hover {
+    transform: scale(0.90);
+    -webkit-transform: scale(0.90);
+    -moz-transform: scale(0.90);
+    -ms-transform: scale(0.90);
+    -o-transform: scale(0.90);
+}
+
 /* slide-4 */
 
 .slide-4{
