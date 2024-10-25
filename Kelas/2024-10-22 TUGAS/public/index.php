@@ -65,19 +65,19 @@
                     <div class="mb-4">
                         <h1 class="font-bold" style="font-family: 'intro-bold';"><?= $main[5] ?></h1>
                         <div class="ml-3">
-                            <p style="font-family: 'intro-light';">HTML</p>
+                            <p style="font-family: 'intro-light';"><?= $skill[0]?></p>
                             <div class="w-full bg-gray-300 rounded-full">
                                 <div class="text-center text-white bg-blue-600 rounded-full" style="width:75%;">75%</div>
                             </div>
-                            <p style="font-family: 'intro-light';">CSS</p>
+                            <p style="font-family: 'intro-light';"><?= $skill[1]?></p>
                             <div class="w-full bg-gray-300 rounded-full">
                                 <div class="text-center text-white bg-blue-600 rounded-full" style="width:50%;">50%</div>
                             </div>
-                            <p style="font-family: 'intro-light';">PHP</p>
+                            <p style="font-family: 'intro-light';"><?= $skill[2]?></p>
                             <div class="w-full bg-gray-300 rounded-full">
                                 <div class="text-center text-white bg-blue-600 rounded-full" style="width:45%;">45%</div>
                             </div>
-                            <p style="font-family: 'intro-light';">C++</p>
+                            <p style="font-family: 'intro-light';"><?= $skill[3]?></p>
                             <div class="w-full bg-gray-300 rounded-full">
                                 <div class="text-center text-white bg-blue-600 rounded-full" style="width:55%;">55%</div>
                             </div>
