@@ -1,7 +1,17 @@
 <?php 
 
+    session_start();
     require_once "../dbcontroller.php";
     $db = new DB;
+    
+    if (!isset($_SESSION['user'])) {
+        header("location:login.php");
+    }
+
+    if (isset($_GET['log'])) {
+        session_destroy();
+        header("location:login.php");
+    }
 
 ?>
 
@@ -11,20 +21,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Page | Aplikasi Restauran SMK</title>
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
 </head>
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-3 mt-4">
+            <div class="mt-4 col-md-3">
                 <h2>Restauran</h2>
             </div>
 
             <div class="col-md-9">
-                <div class="float-end mt-4">Logout</div>
+                <div class="mt-4 float-end"><a href="?log=logut">Logout</a></div>
+                <div class="mt-4 mr-4 float-end">User</div>
             </div>
         </div>
-        <div class="row mt-5">
+        <div class="mt-5 row">
             <div class="col-md-3">
                 <ul class="nav flex-column">
                     <li class="nav-item"><a class="nav-link" href="?f=kategori&m=select">Kategori</a></li>
@@ -49,7 +60,7 @@
                 ?>
             </div>
         </div>
-        <div class="row mt-5">
+        <div class="mt-5 row">
             <div class="col">
                 <p class="text-center">2015 - copyright@kalelaufa</p>
             </div>
