@@ -79,9 +79,9 @@
                     <div>
                         <h1 class="font-bold text-pink-400" style="font-family: 'intro-bold';"><?= $main[6] ?></h1>
                         <ul class="ml-5 text-gray-300 list-disc" style="font-family: 'intro-light';">
-                            <li>Belajar Bahasa Pemrograman</li>
+                            <li>Ngoding</li>
                             <li>Badminton</li>
-                            <li>Mendengarkan Musik</li>
+                            <li>Musik</li>
                         </ul>
                     </div>
                 </div>
