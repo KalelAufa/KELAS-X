@@ -30,9 +30,11 @@
                 <h2>Restauran</h2>
             </div>
 
-            <div class="col-md-9">
-                <div class="mt-4 float-end"><a href="?log=logut">Logout</a></div>
-                <div class="mt-4 mr-4 float-end">User</div>
+            <div class="mt-4 col-md-9">
+                <div class="flex flex-row gap-3 float-end d-flex">
+                    <div class=""> <a href="?log=logout">Logout</a></div>
+                    <div class="">user : <a href="?f=user&m=updateuser&id= <?php echo $_SESSION['iduser']; ?>"><?php echo $_SESSION['user']; ?></a></div>
+                </div>
             </div>
         </div>
         <div class="mt-5 row">

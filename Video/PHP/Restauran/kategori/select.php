@@ -34,6 +34,7 @@
         </tr>
     </thead>
     <tbody>
+        <?php if(!empty($row)) { ?>
         <?php foreach ($row as $r): ?>
         <tr>
             <td><?php echo $no++ ?></td>
@@ -42,6 +43,7 @@
             <td><a href="?f=kategori&m=update&id=<?php echo $r['idkategori'] ?>">Update</a></td>
         </tr>
         <?php endforeach; ?>
+        <?php }?>
     </tbody>
 </table>
 
