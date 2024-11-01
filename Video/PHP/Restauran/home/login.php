@@ -1,11 +1,3 @@
-<?php 
-
-    session_start();
-    require_once "../dbcontroller.php";
-    $db = new DB;
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,7 +20,7 @@
                         <label for="password" class="form-label">Password</label>
                         <input type="password" class="form-control" id="password" name="password" required>
                     </div>
-                    <button type="submit" class="btn btn-primary" value="LOGIN" name="Login">Login</button>
+                    <button type="submit" class="btn btn-primary" value="login" name="login">Login</button>
                 </form>
             </div>
         </div>
@@ -37,19 +29,18 @@
 </html>
 <?php 
 
-    if (isset($_POST['Login'])) {
+    if (isset($_POST['login'])) {
         $email = $_POST['email'];
         $password = $_POST['password'];
-        $sql = "SELECT * FROM tbluser WHERE email='$email' AND password='$password'";
+        $sql = "SELECT * FROM tblpelanggan WHERE email='$email' AND password='$password' AND aktif=1";
         $count = $db->rowCOUNT($sql);
         if ($count == 0) {
             echo "<center><h3>Email atau Password Salah!!</h3></center>";
         }else{
-            $sql = "SELECT * FROM tbluser WHERE email='$email' AND password='$password'";
+            $sql = "SELECT * FROM tblpelanggan WHERE email='$email' AND password='$password' AND aktif=1";
             $row = $db->getITEM($sql);
-            $_SESSION['user'] = $row['email'];
-            $_SESSION['level'] = $row['level'];
-            $_SESSION['iduser'] = $row['iduser'];
+            $_SESSION['pelanggan'] = $row['email'];
+            $_SESSION['idpelanggan'] = $row['idpelanggan'];
             header("Location:index.php");
         }
     }

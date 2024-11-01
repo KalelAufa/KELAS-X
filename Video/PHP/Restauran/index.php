@@ -5,6 +5,11 @@
     $db = new DB;
     $sql = "SELECT * FROM tblkategori ORDER BY kategori ";
     $row = $db->getALL($sql);
+
+    if (isset($_GET['log'])) {
+        session_destroy();
+        header("Location:index.php");
+    }
     
 ?>
 
@@ -20,15 +25,24 @@
     <div class="container">
         <div class="row">
             <div class="mt-4 col-md-3">
-                <h2>Restauran SMK JAYA</h2>
+                <h3> <a href="index.php">Restauran SMK</a></h3>
             </div>
 
             <div class="mt-4 col-md-9">
                 <div class="flex flex-row gap-3 float-end d-flex">
-                    <div class="">Logout</div>
-                    <div class="">Login</div>
-                    <div class="">Pelangan</div>
-                    <div>Daftar</div>
+                    <?php 
+                    if (isset($_SESSION['pelanggan'])) {
+                        echo '
+                            <div><a href="?log=logout">Logout</a></div>
+                            <div>Pelanggan : '.$_SESSION['pelanggan'].'n</div>
+                        ';
+                    }else {
+                        echo '
+                            <div><a href="?f=home&m=login">Login</a></div>
+                            <div><a href="?f=home&m=daftar">Daftar</a></div>
+                        ';
+                    }
+                ?>
                 </div>
             </div>
         </div>
@@ -39,16 +53,21 @@
                 <?php if (!empty($row)) { ?>
                 <ul class="nav flex-column">
                     <?php foreach ($row as $r): ?>
-                    <li class="nav-item"><a class="nav-link" href="#"><?php echo  $r['kategori']; ?></a></li>
+                    <li class="nav-item"><a class="nav-link" href="?f=home&m=product&id=<?php echo  $r['idkategori']; ?>"><?php echo  $r['kategori']; ?></a></li>
                     <?php endforeach ?>
                 </ul>
                 <?php } ?>
             </div>
             <div class="col-md-9">
                 <?php 
-                
-                echo "<h1>DAFTAR MENU</h1>";
-                
+                    if (isset($_GET['f']) && isset($_GET['m'])) {
+                        $f = $_GET['f'];
+                        $m = $_GET['m'];
+                        $file = $f.'/'.$m.'.php';
+                        require_once $file;
+                    }else {
+                        require_once "home/product.php";
+                    }
                 ?>
             </div>
         </div>
