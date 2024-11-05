@@ -23,7 +23,7 @@
             }
 
             if (!empty($data)) {
-                return $data;
+                return $result;
             }
         }
 
