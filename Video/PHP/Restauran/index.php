@@ -34,7 +34,7 @@
                     if (isset($_SESSION['pelanggan'])) {
                         echo '
                             <div><a href="?log=logout">Logout</a></div>
-                            <div>Pelanggan : '.$_SESSION['pelanggan'].'n</div>
+                            <div>Pelanggan : <a href="?f=home&m=beli"> '.$_SESSION['pelanggan'].'</a></div>
                         ';
                     }else {
                         echo '
