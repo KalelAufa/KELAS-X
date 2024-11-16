@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    background-color: #EAEAEA;
+}
+.web-box{
+    background-color: #0C003F;
+    height: 17rem;
+}
+
+/* atas */
+.atss{
+    display: flex;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+}
+
+.atss img{
+    scale: 0.70;
+}
+
+.atss h6{
+    color: #86809F;
+    font-style: italic;
+}
+
+/* navbar */
+.nav{
+    height: 3rem;
+    clear: both;
+}
+.nav-bgc{
+    background-color: #00284F;
+}
+
+.nav-C{
+    display: flex;
+    align-items: center;
+}
+
+.nav-Itm{
+    padding: 0 1rem 1rem 1rem;
+}
+
+ul{
+    margin-top: 0.65rem;
+    display: flex;
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #8092A3;
+}
+
+ul li ul{
+    width: 12rem;
+}
+
+ul li ul li{
+    padding-bottom: 1.5rem;
+}
+
+ul li:hover{
+    cursor: pointer;
+}
+ul li a:hover{
+    color: white;
+}
+
+ul li:hover ul,
+ul li:hover{
+    visibility: visible;
+    display: block;
+}
+
+.drop{
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    z-index: 100;
+}
+
+.drop-menu{
+    visibility: hidden;
+    position: absolute;
+    display: none;
+    left: 0;
+    text-decoration: none;
+    background-color: #00284F;
+}
+
+.drop-item{
+    clear: both;
+    width: 100%;
+}
+
+/* main */
+.main{
+    background-color: white;
+    height: 100rem;
+    margin-bottom: 5rem;
+    display: flex;
+}
+
+.left{
+    width: 30%;
+    height: 80rem;
+    background-color: #E6ECF7;
+    position: sticky;
+    top: 0px;
+}
+
+.center{
+    width: 40%;
+}
+
+.right{
+    width: 30%;
+    height: 50rem;
+    background-color: #E6ECF7;
+    position: sticky;
+    top: 0px;
+}
+
+/* footer */
+.footer{
+    height: 35rem;
+}
+
+.fot-1{
+    background-color: white;
+    height: 25rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fot-left{
+    width: 33%;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fot-center{
+    width: 33%;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fot-right{
+    width: 33%;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fot-2{
+    background-color: #1C1D21;
+    height: 10rem;
+}
+
+.fot-content{
+    width: 80%;
+    height: 80%;
+}
+
+.image{
+    padding-bottom: 0.5rem;
+}
+
+.txt{
+    padding-bottom: 0.5rem;
+}
+
+.txt h6{
+    font-weight: bold;
+    color: #777984;
+}
+
+.txt p{
+    color: #777984;
+}
