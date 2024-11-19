@@ -4,8 +4,20 @@
         $idorder = idorder();
         $idpelanggan = $_SESSION['idpelanggan'];
         $tgl = date('Y-m-d');
-        // insertOrder($idorder, $idpelanggan, $tgl, $total);
-        insertOrderDetail();
+
+        $sql = "SELECT * FROM tblorder WHERE idorder = $idorder";
+        $count = $db->rowCOUNT($sql);
+
+        if ($count == 0) {
+            insertOrder($idorder,$idpelanggan,$tgl,$total);
+            insertOrderDetail($idorder);
+        }else {
+            insertOrderDetail($idorder);
+        }
+        kosongkanSession();
+        header("location: ?f=home&m=checkout");
+    }else{
+        info();
     }
 
     function idorder(){
@@ -34,14 +46,23 @@
                 $row = $db->getALL($sql);
 
                 foreach ($row as $r) {
-                    $sql = "INSERT INTO tblorderdetail VALUES ($idorder, $r[idmenu], $r[harga], $value)";
+                    $idmenu = $r['idmenu'];
+                    $harga = $r['harga'];
+                    $sql = "INSERT INTO tblorderdetail VALUES ('', $idorder, $idmenu, $value, $harga)";
                     $db->runSQL($sql);
                 }
-
-                echo '<pre>';
-                print_r($row);
-                echo '</pre>';
             }
         }
+    }
+    function kosongkanSession(){
+        foreach ($_SESSION as $key => $value) {
+            if ($key<>'pelanggan' && $key<>'idpelanggan') {
+                $id = substr($key,1);
+                unset($_SESSION['_'.$id]);
+            }
+        }
+    }
+    function info(){
+        echo "<h4>TERIMA KASIH TELAH BERBELANJA DI TOKO KAL'EL</h4>";
     }
 ?>
