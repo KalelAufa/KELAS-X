@@ -20,7 +20,7 @@
         </div>
         <div class=" w-50">
             <label for="" class="mb-3">Bayar</label>
-            <input type="number" name="total" required class="form-control">
+            <input type="number" name="bayar" required class="form-control">
         </div>
         <div>
             <input type="submit" name="simpan" value="Bayar" class="mt-3 btn btn-primary">
@@ -31,12 +31,15 @@
 <?php 
 
     if (isset($_POST['simpan'])) {
-        $kategori =  $_POST['kategori'];
-        $sql = "UPDATE tblkategori SET kategori = '$kategori' WHERE idkategori = $id";
-
-        // $db->runSQL($sql);
-
-        // header("location:?f=kategori&m=select");
+        $bayar =  $_POST['bayar'];
+        $kembali = $bayar - $row['total'];
+        $sql = "UPDATE tblorder SET bayar = $bayar, kembali = $kembali, status = 1 WHERE idorder = $id";
+        if ($kembali < 0) {
+            echo "<h3>Pembayaran Kurang</h3>";
+        }else {
+            $db->runSQL($sql);
+            header("location:?f=order&m=select");
+        }
     }
 
 ?>

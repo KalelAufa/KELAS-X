@@ -20,7 +20,7 @@
 ?>
 <h3>Order Pembelian</h3>
 
-<table class="table table-bordered w-50">
+<table class="table table-bordered w-70">
     <thead>
         <tr>
             <th>No</th>
@@ -28,6 +28,8 @@
             <th>Tanggal</th>
             <th>Total</th>
             <th>Bayar</th>
+            <th>Kembali</th>
+            <th>Status</th>
         </tr>
     </thead>
     <tbody>
@@ -45,6 +47,8 @@
             <td><?= $r['pelanggan'] ?></td>
             <td><?= $r['tglorder'] ?></td>
             <td><?= $r['total'] ?></td>
+            <td><?= $r['bayar'] ?></td>
+            <td><?= $r['kembali'] ?></td>
             <?= $status ?>
         </tr>
         <?php endforeach; ?>
