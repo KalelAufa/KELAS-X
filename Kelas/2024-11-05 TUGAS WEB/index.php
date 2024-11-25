@@ -21,7 +21,7 @@
                 <nav class="nav nav-bgc">
                         <div class="nav-C">
                             <ul>
-                                <li class="nav-Itm"><a href="" class="nav-Link"><i class="fas fa-search"></i></a></li>
+                                <li class="nav-Itm"><a href="#" class="nav-Link"><i class="fas fa-search"></i></a></li>
                                 <li class="nav-Itm drop"><a href="#" class="nav-Link">Profil Sekolah
                                     <i class="fas fa-caret-down"></i>
                                     <ul class="drop-menu">
@@ -99,31 +99,31 @@
                                 require_once('pages/Tour/tour.php');
                             }
                             if ($menu == 'rpl') {
-                                require_once('pages/menu/rpl.php');
+                                require_once('pages/Keahlian/rpl.php');
                             }
                             if ($menu == 'dkv') {
-                                require_once('pages/menu/dkv.php');
+                                require_once('pages/Keahlian/dkv.php');
                             }
                             if ($menu == 'lp') {
-                                require_once('pages/menu/lp.php');
+                                require_once('pages/Keahlian/lp.php');
                             }
                             if ($menu == 'ak') {
-                                require_once('pages/menu/ak.php');
+                                require_once('pages/Keahlian/ak.php');
                             }
                             if ($menu == 'mp') {
-                                require_once('pages/menu/mp.php');
+                                require_once('pages/Keahlian/mp.php');
                             }
                             if ($menu == 'bd') {
-                                require_once('pages/menu/bd.php');
+                                require_once('pages/Keahlian/bd.php');
                             }
                             if ($menu == 'bkk') {
-                                require_once('pages/menu/bkk.php');
+                                require_once('pages/Bidang/bkk.php');
                             }
                             if ($menu == 'lsp') {
-                                require_once('pages/menu/lsp.php');
+                                require_once('pages/Bidang/lsp.php');
                             }
                             if ($menu == 'technopark') {
-                                require_once('pages/menu/technopark.php');
+                                require_once('pages/Bidang/technopark.php');
                             }
                             if ($menu == 'karyasiswa') {
                                 require_once('pages/fitur/karyasiswa.php');
