@@ -25,41 +25,41 @@
                                 <li class="nav-Itm drop"><a href="#" class="nav-Link">Profil Sekolah
                                     <i class="fas fa-caret-down"></i>
                                     <ul class="drop-menu">
-                                        <li class="drop-item "><a href="?guru=merpati">Sekolah "MERPATI"</a></li>
-                                        <li class="drop=item"><a href="?guru=sejarah">Sejarah Sekolah</a></li>
-                                        <li class="drop=item"><a href="?guru=sambutan">Sambutan Kepsek</a></li>
-                                        <li class="drop=item"><a href="?guru=visimisi">Visi & Misi</a></li>
+                                        <li class="drop-item "><a href="?menu=merpati">Sekolah "MERPATI"</a></li>
+                                        <li class="drop=item"><a href="?menu=sejarah">Sejarah Sekolah</a></li>
+                                        <li class="drop=item"><a href="?menu=sambutan">Sambutan Kepsek</a></li>
+                                        <li class="drop=item"><a href="?menu=visimisi">Visi & Misi</a></li>
                                     </ul>
                                 </a></li>
                                 <li class="nav-Itm"><a href="?menu=kerjasama" class="nav-Link">Kerja Sama</a></li>
                                 <li class="nav-Itm"><a href="?menu=tour" class="nav-Link">Tour Sekolah</a></li>
-                                <li class="nav-Itm drop"><a href="#" class="nav-Link">Kosentrasi Keahlian
+                                <li class="nav-Itm drop"><a href="#" class="nav-Link">Kosentrasi keahlian
                                     <i class="fas fa-caret-down"></i>
                                     <ul class="drop-menu">
-                                        <li class="drop-item pt-2"><a href="?keahlian=rpl">RPL | Rekayasa Perangkat Lunak</a></li>
-                                        <li class="drop=item"><a href="?keahlian=dkv">DKV | Desain Komunikasi Visual</a></li>
-                                        <li class="drop=item"><a href="?keahlian=lp">LP | Layanan Perbankan </a></li>
-                                        <li class="drop=item"><a href="?keahlian=ak">AK | Akuntansi</a></li>
-                                        <li class="drop=item"><a href="?keahlian=mp">MP | Manajemen Perkantoran</a></li>
-                                        <li class="drop=item"><a href="?keahlian=bd">BD | Bisnis Digital</a></li>
+                                        <li class="drop-item pt-2"><a href="?menu=rpl">RPL | Rekayasa Perangkat Lunak</a></li>
+                                        <li class="drop=item"><a href="?menu=dkv">DKV | Desain Komunikasi Visual</a></li>
+                                        <li class="drop=item"><a href="?menu=lp">LP | Layanan Perbankan </a></li>
+                                        <li class="drop=item"><a href="?menu=ak">AK | Akuntansi</a></li>
+                                        <li class="drop=item"><a href="?menu=mp">MP | Manajemen Perkantoran</a></li>
+                                        <li class="drop=item"><a href="?menu=bd">BD | Bisnis Digital</a></li>
                                     </ul>
                                 </a></li>
                                 <li class="nav-Itm drop"><a href="#" class="nav-Link">Bidang
                                     <i class="fas fa-caret-down"></i>
                                     <ul class="drop-menu">
-                                        <li class="drop-item pt-2"><a href="?bidang=bkk">Bursa Kerja Khusus (BKK)</a></li>
-                                        <li class="drop=item"><a href="?bidang=lsp">LSP P1 SMKN 2 Buduran</a></li>
-                                        <li class="drop=item"><a href="?bidang=technopark">Technopark</a></li>
+                                        <li class="drop-item pt-2"><a href="?menu=bkk">Bursa Kerja Khusus (BKK)</a></li>
+                                        <li class="drop=item"><a href="?menu=lsp">LSP P1 SMKN 2 Buduran</a></li>
+                                        <li class="drop=item"><a href="?menu=technopark">Technopark</a></li>
                                     </ul>
                                 </a></li>
                                 <li class="nav-Itm drop"><a href="#" class="nav-Link">Fitur-fitur
                                     <i class="fas fa-caret-down"></i>
                                     <ul class="drop-menu">
-                                        <li class="drop-item pt-2"><a href="?category=karyasiswa">Karya Siswa</a></li>
-                                        <li class="drop-item"><a href="?category=informasi">Informasi</a></li>
-                                        <li class="drop-item"><a href="?category=galeri">Galeri</a></li>
-                                        <li class="drop-item"><a href="?category=artikel">Artikel</a></li>
-                                        <li class="drop-item"><a href="?category=elearning">E-Learning</a></li>
+                                        <li class="drop-item pt-2"><a href="?menu=karyasiswa">Karya Siswa</a></li>
+                                        <li class="drop-item"><a href="?menu=informasi">Informasi</a></li>
+                                        <li class="drop-item"><a href="?menu=galeri">Galeri</a></li>
+                                        <li class="drop-item"><a href="?menu=artikel">Artikel</a></li>
+                                        <li class="drop-item"><a href="?menu=elearning">E-Learning</a></li>
                                     </ul>
                                 </a></li>
                                 <li class="nav-Itm drop"><a href="#" class="nav-Link">Administrasi
@@ -78,80 +78,70 @@
                 <div class="left">left</div>
                 <div class="center">
                     <?php 
-                        if (isset($_GET['guru'])) {
-                            $guru = $_GET['guru'];
-                            if ($guru == 'merpati'){
-                                require_once('pages/profil/merpati.php');
-                            }
-                            if ($guru == 'sejarah') {
-                                require_once('pages/profil/sejarah.php');
-                            }
-                            if ($guru == 'sambutan') {
-                                require_once('pages/profil/sambutan.php');
-                            }
-                            if ($guru == 'visimisi') {
-                                require_once('pages/profil/visimisi.php');
-                            }
-                        }
                         if (isset($_GET['menu'])) {
                             $menu = $_GET['menu'];
+                            if ($menu == 'merpati'){
+                                require_once('pages/profil/merpati.php');
+                            }
+                            if ($menu == 'sejarah') {
+                                require_once('pages/profil/sejarah.php');
+                            }
+                            if ($menu == 'sambutan') {
+                                require_once('pages/profil/sambutan.php');
+                            }
+                            if ($menu == 'visimisi') {
+                                require_once('pages/profil/visimisi.php');
+                            }
                             if ($menu == 'kerjasama') {
                                 require_once('pages/KerjaSama/kerjasama.php');
                             }
                             if ($menu == 'tour') {
                                 require_once('pages/Tour/tour.php');
                             }
-                        }
-                        if (isset($_GET['keahlian'])) {
-                            $keahlian = $_GET['keahlian'];
-                            if ($keahlian == 'rpl') {
-                                require_once('pages/Keahlian/rpl.php');
+                            if ($menu == 'rpl') {
+                                require_once('pages/menu/rpl.php');
                             }
-                            if ($keahlian == 'dkv') {
-                                require_once('pages/Keahlian/dkv.php');
+                            if ($menu == 'dkv') {
+                                require_once('pages/menu/dkv.php');
                             }
-                            if ($keahlian == 'lp') {
-                                require_once('pages/Keahlian/lp.php');
+                            if ($menu == 'lp') {
+                                require_once('pages/menu/lp.php');
                             }
-                            if ($keahlian == 'ak') {
-                                require_once('pages/Keahlian/ak.php');
+                            if ($menu == 'ak') {
+                                require_once('pages/menu/ak.php');
                             }
-                            if ($keahlian == 'mp') {
-                                require_once('pages/Keahlian/mp.php');
+                            if ($menu == 'mp') {
+                                require_once('pages/menu/mp.php');
                             }
-                            if ($keahlian == 'bd') {
-                                require_once('pages/Keahlian/bd.php');
+                            if ($menu == 'bd') {
+                                require_once('pages/menu/bd.php');
                             }
-                        }
-                        if (isset($_GET['bidang'])) {
-                            $bidang = $_GET['bidang'];
-                            if ($bidang == 'bkk') {
-                                require_once('pages/Bidang/bkk.php');
+                            if ($menu == 'bkk') {
+                                require_once('pages/menu/bkk.php');
                             }
-                            if ($bidang == 'lsp') {
-                                require_once('pages/Bidang/lsp.php');
+                            if ($menu == 'lsp') {
+                                require_once('pages/menu/lsp.php');
                             }
-                            if ($bidang == 'technopark') {
-                                require_once('pages/Bidang/technopark.php');
+                            if ($menu == 'technopark') {
+                                require_once('pages/menu/technopark.php');
                             }
-                        }
-                        if (isset($_GET['category'])) {
-                            $category = $_GET['category'];
-                            if ($category == 'karyasiswa') {
+                            if ($menu == 'karyasiswa') {
                                 require_once('pages/fitur/karyasiswa.php');
                             }
-                            if ($category == 'informasi') {
+                            if ($menu == 'informasi') {
                                 require_once('pages/fitur/informasi.php');
                             }
-                            if ($category == 'galeri') {
+                            if ($menu == 'galeri') {
                                 require_once('pages/fitur/galeri.php');
                             }
-                            if ($category == 'artikel') {
+                            if ($menu == 'artikel') {
                                 require_once('pages/fitur/artikel.php');
                             }
-                            if ($category == 'elearning') {
+                            if ($menu == 'elearning') {
                                 require_once('pages/fitur/elearning.php');
                             }
+                        }else {
+                            require_once('pages/home.php');
                         }
                     ?>
                 </div>
