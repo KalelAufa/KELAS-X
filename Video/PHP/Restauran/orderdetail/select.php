@@ -1,11 +1,11 @@
 <h3>Detail Pembelian</h3>
 <div class="">
     <form action="" method="post">
-        <div class=" w-50">
+        <div class=" w-50 float-start">
             <label for="" class="mb-3">Tanggal Awal</label>
             <input type="date" name="tawal" required class="form-control">
         </div>
-        <div class=" w-50">
+        <div class=" w-50 float-start">
             <label for="" class="mb-3">Tanggal Akhir</label>
             <input type="date" name="takhir" required class="form-control">
         </div>
@@ -15,8 +15,8 @@
     </form>
 </div>
 <?php 
-    $jumlahdata = $db->rowCOUNT("SELECT idorderdetail FROM vorderdetail ");
-    $banyak = 4;
+    $jumlahdata = $db->rowCOUNT("SELECT idorderdetail FROM vorderdetail");
+    $banyak = 3;
 
     $halaman =  ceil($jumlahdata / $banyak);
 
