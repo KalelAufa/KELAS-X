@@ -9,7 +9,7 @@ int main(){
     cout << "Masukkan Jumlah Pembelian Anda: ";
     cin >> n;
 
-    if ( n >= 1000000)
+    if ( n >= 100000)
     {
         potongan = n * 0.10;
         hasil = n - potongan;

@@ -30,12 +30,12 @@ cout << endl;
     {
         for (int j = 1; j < i; j++)
         {
-            cout << " ";
+            cout << "   ";
         }
 
         for (int k = 5; k >= i; k--)
         {
-            cout << "*";
+            cout << " * ";
         }
         cout << endl;
     }
@@ -46,12 +46,12 @@ cout << endl;
     {
         for (int j = 5; j > i; j--)
         {
-            cout << " ";
+            cout << "   ";
         }
 
         for (int k = 1; k <= i; k++)
         {
-            cout << "*";
+            cout << " * ";
         }
         cout << endl;
     }
