@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
             move_uploaded_file($_FILES['gambar']['tmp_name'], "$upload_dir/" . basename($_FILES['gambar']['name']));
             if ($barang->create($nama_barang, $harga, $stok, "$upload_dir/" . basename($_FILES['gambar']['name']))) {
-                header("Location: index.php");
+                header("Location: ../index.php");
                 exit();
             } else {
                 echo "<p class='text-danger'>Error adding item.</p>";

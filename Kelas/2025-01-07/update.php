@@ -26,13 +26,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             // Update with new image path
             if ($barang->update($id,  htmlspecialchars(strip_tags(basename($_FILES['gambar']['name']))), $harga, $stok, "uploads/" . basename($_FILES['gambar']['name']))) {
-                header("Location: index.php");
+                header("Location: ../index.php");
                 exit();
             }
         } else {
             // If no new image is uploaded, keep existing image path (fetch it from DB)
             if ($barang->update($id, $nama_barang, $harga, $stok, null)) {
-                header("Location: index.php");
+                header("Location: ../index.php");
                 exit();
             }
         }

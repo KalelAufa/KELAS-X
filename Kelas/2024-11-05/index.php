@@ -1,10 +1,4 @@
-<?php 
-    $host = "127.0.0.1";
-    $user = "root";
-    $password = "";
-    $database = "sekolah";
-    $koneksi = mysqli_connect($host, $user, $password, $database);
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -9,7 +9,7 @@ $barang = new Barang($db);
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
     if (isset($_GET['id'])) {
         if ($barang->delete($_GET[' id '])) {
-            header("Location: index.php");
+            header("Location: ../index.php");
             exit();
         } else {
             echo "Unable to delete record.";
