@@ -1,13 +1,3 @@
-<!-- <?php
-if (isset($_GET['f']) && isset($_GET['m'])) {
-    $f = $_GET['f'];
-    $m = $_GET['m'];
-    $file = $f . '/' . $m . '.php';
-    require_once $file;
-} else {
-    require_once "index.php";
-}
-?> -->
 <header class="bg-white shadow">
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
         <!-- Logo -->
@@ -20,7 +10,7 @@ if (isset($_GET['f']) && isset($_GET['m'])) {
 
         <!-- Pencarian -->
         <div class="flex-grow mx-56 flex justify-center">
-            <form action="pages/produk/cari_produk.php" method="GET" class="relative w-full"> <!-- Mengarahkan ke cari_produk.php -->
+            <form action="../produk/cari_produk.php" method="GET" class="relative w-full"> <!-- Mengarahkan ke cari_produk.php -->
                 <input type="text" name="query" placeholder="Cari produk..." class="border rounded px-4 py-2 pl-10 w-full focus:outline-none focus:ring focus:ring-blue-300">
                 <span class="absolute left-3 top-2.5 text-gray-500"><i class="fas fa-search"></i></span>
             </form>
@@ -29,11 +19,11 @@ if (isset($_GET['f']) && isset($_GET['m'])) {
         <!-- Navigasi -->
         <nav class="flex items-center space-x-6">
             <ul class="flex space-x-4">
-                <li><a href="index.php" class="text-gray-700 hover:text-blue-600">Beranda</a></li>
+                <li><a href="../index.php" class="text-gray-700 hover:text-blue-600">Beranda</a></li>
                 <li><a href="#" class="text-gray-700 hover:text-blue-600">Kategori</a></li>
                 <!-- Ikon Wishlist -->
                 <li>
-                    <a href="produk/wishlist.php" class="relative inline-block">
+                    <a href="../produk/wishlist.php" class="relative inline-block">
                         <i class="fas fa-heart text-xl"></i>
                         <?php if (isset($_SESSION['user_id'])): ?>
                             <?php
@@ -51,7 +41,7 @@ if (isset($_GET['f']) && isset($_GET['m'])) {
                 </li>
                 <!-- Ikon Keranjang Belanja -->
                 <li class="relative">
-                    <a href="keranjang/keranjang.php" class="text-gray-700 hover:text-blue-600">
+                    <a href="../keranjang/keranjang.php" class="text-gray-700 hover:text-blue-600">
                         <i class="fas fa-shopping-cart text-xl"></i>
                         <?php if (isset($_SESSION['user_id'])): ?>
                             <?php
@@ -67,11 +57,11 @@ if (isset($_GET['f']) && isset($_GET['m'])) {
                     </a>
                 </li>
                 <?php if (isset($_SESSION['user_id'])): ?>
-                    <li><a href="akun/profile.php" class="hover:underline">Profile</a></li>
-                    <li><a href="akun/logout.php" class="hover:underline">Logout</a></li>
+                    <li><a href="../akun/profile.php" class="hover:underline">Profile</a></li>
+                    <li><a href="../akun/logout.php" class="hover:underline">Logout</a></li>
                 <?php else: ?>
-                    <li><a href="akun/login.php" class="hover:underline">Login</a></li>
-                    <li><a href="akun/register.php" class="hover:underline">Daftar</a></li>
+                    <li><a href="../akun/login.php" class="hover:underline">Login</a></li>
+                    <li><a href="../akun/register.php" class="hover:underline">Daftar</a></li>
                 <?php endif; ?>
             </ul>
         </nav>

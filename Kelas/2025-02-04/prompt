@@ -1,0 +1,12 @@
+buatkan toko online menggunakan PHP dan MySQL dengan fitur :
+1. menampilkan banner statis dan dinamais, 
+2. menampilkan produk yang terdiri dari gambar product, nama product, harga product, dan tombol add to cart
+3. Fungsi cart untuk menambahkan produk yang akan dibeli ke dalam cart, menambah dan mengurangi jumlah, melihat  harga, menghapus barang yang ada di cart, menghitung total belanja, melakukan check out untuk pembayaran, melakukan pembayaran.
+4. Fungsi registrasi pelanggan dengan memasukkan nama lengkap, alamat email, password, confirm password.
+5. Fungsi login untuk memasukkan Email dan password agar pelanggan bisa LOGIN sebelum berbelanja.
+6. Fungsi contact untuk pelanggan menghubungi toko dengan memasukkan kolom nama, email, dan pesan yang akan disampaikan.
+7. tampilkan about page untuk pelanggan melihat profil dan motto dari toko kami yang menampilkan
+8. halaman Shop yang menampilkan produk agar pembeli dapat melihat produk yang akan dibeli
+
+
+buatkan PHPnya saja tanpa menggunakan HTML, CSS, JavaScirpt dan buat dalam file sesuai dengan Fungsinya masing-masing
