@@ -51,7 +51,9 @@ class FrontController extends Controller
             'jeniskelamin' => $data['jeniskelamin'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'aktif' => 1,
         ]);
+        return redirect('login');
     }
 
     /**
@@ -109,7 +111,7 @@ class FrontController extends Controller
             'email' => 'required | email',
             'password' => 'required | min:3',
         ]);
-        $pelanggan = Pelanggan::where('email', $data['email'])->first();
+        $pelanggan = Pelanggan::where('email', $data['email'])->where('aktif',1)->first();
         if (!$pelanggan) {
             return back()->with('error', 'Email tidak ditemukan.');
         }

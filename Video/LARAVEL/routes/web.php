@@ -8,6 +8,8 @@ use App\Http\Controllers\KategoriController;
 use App\Http\Controllers\MenuController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\OrderDetailController;
+use App\Http\Controllers\PelangganController;
 
 Route::get('/', [FrontController::class, 'index']);
 Route::get('show/{id}', [FrontController::class, 'show']);
@@ -36,5 +38,10 @@ Route::group(['prefix'=>'admin', 'Middleware'=>['auth']], function(){
     Route::group(['Middleware'=>['CekLogin:manager']], function(){
         Route::resource('kategori', KategoriController::class);
         Route::resource('menu', MenuController::class);
+        Route::resource('order', OrderController::class);
+        Route::resource('orderdetail', OrderDetailController::class);
+        Route::resource('pelanggan', PelangganController::class);
+        Route::get('select', [MenuController::class, 'select']);
+        Route::post('postmenu/{id}', [MenuController::class, 'update']);
     });
 });

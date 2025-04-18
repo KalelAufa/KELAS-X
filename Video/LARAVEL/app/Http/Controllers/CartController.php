@@ -100,7 +100,8 @@ class CartController extends Controller
             'tglorder' => $tanggal,
             'total' => $total,
             'bayar' => 0,
-            'kembali' => 0
+            'kembali' => 0,
+            'status' => 0
         ];
         Order::create($data);
         session()->forget('cart');

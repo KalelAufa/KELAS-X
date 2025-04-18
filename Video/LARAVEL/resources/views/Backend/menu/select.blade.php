@@ -3,7 +3,19 @@
     <div>
         <h1>menu</h1>
     </div>
-    <div>
+    <div class="row">
+        <div class="col-4">
+            <form action="{{ url('admin/select') }}" method="get">
+                <select class="form-select" name="idkategori" onchange="this.form.submit()">
+                    <option value="">-- Pilih Kategori--</option>
+                    @foreach ( $kategoris as $kategori )
+                        <option value="{{ $kategori->idkategori }}">{{ $kategori->kategori }}</option>
+                    @endforeach
+                </select>
+            </form>
+        </div>
+    </div>
+    <div class="mt-2">
         <table class="table table-striped">
             <thead>
                 <tr>
