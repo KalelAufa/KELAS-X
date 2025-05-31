@@ -1,0 +1,7 @@
+saya ingin membuat website restoran buatkan tampilan frontend nya yang memiliki:
+1. home page berisi navbar, sidebar, main content, footer yang terpissah
+2. navbar berisi logo, search, menu, cart, login dan register (setelah login menampilkan nama pelanggan dan logout) 
+3. sidebar berisi kategori yang di gunakan untuk memfilter berdasarkan kategori
+4. main content berisi content-content
+5. footer buatkan seperti umum nya secara professioanal
+gunakan api pada folder src dan service untuk function yang diperlukan backend
