@@ -18,10 +18,7 @@ const LoginPage = () => {
       navigate("/");
       window.location.reload(); // Force a reload to update Navbar state (e.g., cart count)
     } catch (err) {
-      setError(
-        err.response?.data?.message ||
-          "Login failed. Please check your credentials."
-      );
+      setError(err.message || "Login failed. Please check your credentials.");
     }
   };
 

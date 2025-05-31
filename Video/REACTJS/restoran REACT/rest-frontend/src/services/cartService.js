@@ -5,7 +5,11 @@ export const getCartItems = async () => {
     const response = await api.get("/cart");
     return response.data;
   } catch (error) {
-    throw error.response.data;
+    throw (
+      error.response?.data || {
+        message: error.message || "Terjadi kesalahan koneksi/server",
+      }
+    );
   }
 };
 
@@ -14,7 +18,11 @@ export const addToCart = async (itemData) => {
     const response = await api.post("/cart", itemData);
     return response.data;
   } catch (error) {
-    throw error.response.data;
+    throw (
+      error.response?.data || {
+        message: error.message || "Terjadi kesalahan koneksi/server",
+      }
+    );
   }
 };
 
@@ -23,7 +31,11 @@ export const updateCartItem = async (id, itemData) => {
     const response = await api.put(`/cart/${id}`, itemData);
     return response.data;
   } catch (error) {
-    throw error.response.data;
+    throw (
+      error.response?.data || {
+        message: error.message || "Terjadi kesalahan koneksi/server",
+      }
+    );
   }
 };
 
@@ -32,7 +44,11 @@ export const removeCartItem = async (id) => {
     const response = await api.delete(`/cart/${id}`);
     return response.data;
   } catch (error) {
-    throw error.response.data;
+    throw (
+      error.response?.data || {
+        message: error.message || "Terjadi kesalahan koneksi/server",
+      }
+    );
   }
 };
 
@@ -41,7 +57,11 @@ export const clearCart = async () => {
     const response = await api.delete("/cart/clear");
     return response.data;
   } catch (error) {
-    throw error.response.data;
+    throw (
+      error.response?.data || {
+        message: error.message || "Terjadi kesalahan koneksi/server",
+      }
+    );
   }
 };
 
@@ -50,6 +70,10 @@ export const checkoutCart = async () => {
     const response = await api.post("/cart/checkout");
     return response.data;
   } catch (error) {
-    throw error.response.data;
+    throw (
+      error.response?.data || {
+        message: error.message || "Terjadi kesalahan koneksi/server",
+      }
+    );
   }
 };

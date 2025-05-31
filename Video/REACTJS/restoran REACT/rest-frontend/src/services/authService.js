@@ -6,7 +6,11 @@ export const customerRegister = async (userData) => {
     const response = await api.post("/auth/register", userData);
     return response.data;
   } catch (error) {
-    throw error.response.data;
+    throw (
+      error.response?.data || {
+        message: error.message || "Terjadi kesalahan koneksi/server",
+      }
+    );
   }
 };
 
@@ -16,7 +20,11 @@ export const customerLogin = async (credentials) => {
     localStorage.setItem("token", response.data.token);
     return response.data;
   } catch (error) {
-    throw error.response.data;
+    throw (
+      error.response?.data || {
+        message: error.message || "Terjadi kesalahan koneksi/server",
+      }
+    );
   }
 };
 
@@ -26,7 +34,11 @@ export const customerLogout = async () => {
     localStorage.removeItem("token");
     return response.data;
   } catch (error) {
-    throw error.response.data;
+    throw (
+      error.response?.data || {
+        message: error.message || "Terjadi kesalahan koneksi/server",
+      }
+    );
   }
 };
 
@@ -35,7 +47,11 @@ export const getCustomerProfile = async () => {
     const response = await api.get("/auth/me");
     return response.data;
   } catch (error) {
-    throw error.response.data;
+    throw (
+      error.response?.data || {
+        message: error.message || "Terjadi kesalahan koneksi/server",
+      }
+    );
   }
 };
 
@@ -45,7 +61,11 @@ export const staffRegister = async (staffData) => {
     const response = await api.post("/staff/auth/register", staffData);
     return response.data;
   } catch (error) {
-    throw error.response.data;
+    throw (
+      error.response?.data || {
+        message: error.message || "Terjadi kesalahan koneksi/server",
+      }
+    );
   }
 };
 
@@ -55,7 +75,11 @@ export const staffLogin = async (credentials) => {
     localStorage.setItem("token", response.data.token);
     return response.data;
   } catch (error) {
-    throw error.response.data;
+    throw (
+      error.response?.data || {
+        message: error.message || "Terjadi kesalahan koneksi/server",
+      }
+    );
   }
 };
 
@@ -65,7 +89,11 @@ export const staffLogout = async () => {
     localStorage.removeItem("token");
     return response.data;
   } catch (error) {
-    throw error.response.data;
+    throw (
+      error.response?.data || {
+        message: error.message || "Terjadi kesalahan koneksi/server",
+      }
+    );
   }
 };
 
@@ -74,6 +102,10 @@ export const getStaffProfile = async () => {
     const response = await api.get("/staff/auth/me");
     return response.data;
   } catch (error) {
-    throw error.response.data;
+    throw (
+      error.response?.data || {
+        message: error.message || "Terjadi kesalahan koneksi/server",
+      }
+    );
   }
 };

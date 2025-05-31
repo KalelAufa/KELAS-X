@@ -5,7 +5,11 @@ export const getStaffs = async () => {
     const response = await api.get("/staff");
     return response.data;
   } catch (error) {
-    throw error.response.data;
+    throw (
+      error.response?.data || {
+        message: error.message || "Terjadi kesalahan koneksi/server",
+      }
+    );
   }
 };
 
@@ -14,7 +18,11 @@ export const createStaff = async (staffData) => {
     const response = await api.post("/staff", staffData);
     return response.data;
   } catch (error) {
-    throw error.response.data;
+    throw (
+      error.response?.data || {
+        message: error.message || "Terjadi kesalahan koneksi/server",
+      }
+    );
   }
 };
 
@@ -23,7 +31,11 @@ export const getStaffById = async (id) => {
     const response = await api.get(`/staff/${id}`);
     return response.data;
   } catch (error) {
-    throw error.response.data;
+    throw (
+      error.response?.data || {
+        message: error.message || "Terjadi kesalahan koneksi/server",
+      }
+    );
   }
 };
 
@@ -32,7 +44,11 @@ export const updateStaff = async (id, staffData) => {
     const response = await api.put(`/staff/${id}`, staffData);
     return response.data;
   } catch (error) {
-    throw error.response.data;
+    throw (
+      error.response?.data || {
+        message: error.message || "Terjadi kesalahan koneksi/server",
+      }
+    );
   }
 };
 
@@ -41,7 +57,11 @@ export const deleteStaff = async (id) => {
     const response = await api.delete(`/staff/${id}`);
     return response.data;
   } catch (error) {
-    throw error.response.data;
+    throw (
+      error.response?.data || {
+        message: error.message || "Terjadi kesalahan koneksi/server",
+      }
+    );
   }
 };
 
@@ -50,6 +70,10 @@ export const restoreStaff = async (id) => {
     const response = await api.post(`/staff/${id}/restore`);
     return response.data;
   } catch (error) {
-    throw error.response.data;
+    throw (
+      error.response?.data || {
+        message: error.message || "Terjadi kesalahan koneksi/server",
+      }
+    );
   }
 };

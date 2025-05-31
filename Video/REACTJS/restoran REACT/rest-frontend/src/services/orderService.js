@@ -5,7 +5,11 @@ export const getOrders = async () => {
     const response = await api.get("/orders");
     return response.data;
   } catch (error) {
-    throw error.response.data;
+    throw (
+      error.response?.data || {
+        message: error.message || "Terjadi kesalahan koneksi/server",
+      }
+    );
   }
 };
 
@@ -14,7 +18,11 @@ export const createOrder = async (orderData) => {
     const response = await api.post("/orders", orderData);
     return response.data;
   } catch (error) {
-    throw error.response.data;
+    throw (
+      error.response?.data || {
+        message: error.message || "Terjadi kesalahan koneksi/server",
+      }
+    );
   }
 };
 
@@ -23,7 +31,11 @@ export const getOrderById = async (id) => {
     const response = await api.get(`/orders/${id}`);
     return response.data;
   } catch (error) {
-    throw error.response.data;
+    throw (
+      error.response?.data || {
+        message: error.message || "Terjadi kesalahan koneksi/server",
+      }
+    );
   }
 };
 
@@ -32,7 +44,11 @@ export const updateOrder = async (id, orderData) => {
     const response = await api.put(`/orders/${id}`, orderData);
     return response.data;
   } catch (error) {
-    throw error.response.data;
+    throw (
+      error.response?.data || {
+        message: error.message || "Terjadi kesalahan koneksi/server",
+      }
+    );
   }
 };
 
@@ -41,7 +57,11 @@ export const updateOrderStatus = async (id, statusData) => {
     const response = await api.put(`/orders/${id}/status`, statusData);
     return response.data;
   } catch (error) {
-    throw error.response.data;
+    throw (
+      error.response?.data || {
+        message: error.message || "Terjadi kesalahan koneksi/server",
+      }
+    );
   }
 };
 
@@ -50,7 +70,11 @@ export const deleteOrder = async (id) => {
     const response = await api.delete(`/orders/${id}`);
     return response.data;
   } catch (error) {
-    throw error.response.data;
+    throw (
+      error.response?.data || {
+        message: error.message || "Terjadi kesalahan koneksi/server",
+      }
+    );
   }
 };
 
@@ -60,7 +84,11 @@ export const getOrderDetails = async (orderId) => {
     const response = await api.get(`/orders/${orderId}/details`);
     return response.data;
   } catch (error) {
-    throw error.response.data;
+    throw (
+      error.response?.data || {
+        message: error.message || "Terjadi kesalahan koneksi/server",
+      }
+    );
   }
 };
 
@@ -69,7 +97,11 @@ export const createOrderDetail = async (orderId, detailData) => {
     const response = await api.post(`/orders/${orderId}/details`, detailData);
     return response.data;
   } catch (error) {
-    throw error.response.data;
+    throw (
+      error.response?.data || {
+        message: error.message || "Terjadi kesalahan koneksi/server",
+      }
+    );
   }
 };
 
@@ -78,7 +110,11 @@ export const getOrderDetailById = async (orderId, detailId) => {
     const response = await api.get(`/orders/${orderId}/details/${detailId}`);
     return response.data;
   } catch (error) {
-    throw error.response.data;
+    throw (
+      error.response?.data || {
+        message: error.message || "Terjadi kesalahan koneksi/server",
+      }
+    );
   }
 };
 
@@ -90,7 +126,11 @@ export const updateOrderDetail = async (orderId, detailId, detailData) => {
     );
     return response.data;
   } catch (error) {
-    throw error.response.data;
+    throw (
+      error.response?.data || {
+        message: error.message || "Terjadi kesalahan koneksi/server",
+      }
+    );
   }
 };
 
@@ -99,6 +139,10 @@ export const deleteOrderDetail = async (orderId, detailId) => {
     const response = await api.delete(`/orders/${orderId}/details/${detailId}`);
     return response.data;
   } catch (error) {
-    throw error.response.data;
+    throw (
+      error.response?.data || {
+        message: error.message || "Terjadi kesalahan koneksi/server",
+      }
+    );
   }
 };

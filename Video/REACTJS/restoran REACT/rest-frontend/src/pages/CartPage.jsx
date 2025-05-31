@@ -23,10 +23,7 @@ const CartPage = () => {
         setCartItems(items);
         setLoading(false);
       } catch (err) {
-        setError(
-          err.response?.data?.message ||
-            "Failed to load cart items. Please log in."
-        );
+        setError(err.message || "Failed to load cart items. Please log in.");
         setLoading(false);
       }
     };
